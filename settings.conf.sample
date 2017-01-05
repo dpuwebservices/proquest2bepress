@@ -1,0 +1,47 @@
+[time]
+# How long in minutes a directory has to remain dormant for the script
+# to consider the files are ready to upload
+# Ex.: 20
+batch_timeout=
+# How long to wait between checking for new files in seconds
+# Ex.: 30
+sleep_time=
+
+[dirs]
+# Location of the SFTP upload directory
+# Ex.: /home/sftp/upload/
+upload_dir=
+# Location of the directory to store intermediary files
+# Ex.: /home/sftp/working/
+
+# Location in Dropbox where finished files will be uploaded
+# Ex.: /P2BTests/
+dropbox_dir=
+
+[xslt]
+# Path to the XSLT used for transformations.
+# An example result.xsl is included with this distribution.
+xslt_path=
+
+[smtp]
+# SMTP server used to send emails
+smtp_server=
+
+# SMTP user used to send emails
+# Leave blank for no authentication
+smtp_user=
+
+# SMTP password for user used to send emails
+# Leave blank for no authentication
+smtp_password=
+
+[email]
+# Set to 1 to send emails on successful processing or errors
+send_emails = 0
+# Add one line for each set of email addresses to send results to based on subfolder uploaded to.
+# Ex.: MySubfolder=my.email@domain.com,myother.email@domain.com
+
+[dropbox]
+# Full path to dropbox_uploader.sh
+# A copy is included with this distribution 
+dbuploader_path=
